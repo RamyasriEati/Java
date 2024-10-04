@@ -1,0 +1,12 @@
+public class Area {
+public static void main(String[] args)
+{
+ int m=10,A,p;
+ int n=5;
+ A=m*n;
+ p= 2*(m+n);
+ System.out.println("The Area of rectangle is:"+A);
+ System.out.println("The perimeter of rectangle is:"+p);	
+}
+}
+

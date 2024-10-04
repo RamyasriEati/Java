@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class parallelogram {
+public static void main(String[] args)
+{
+	int b,h,A;
+	System.out.println("enter two numbers:");
+	Scanner scan = new Scanner(System.in);
+	b= scan.nextInt();
+	h= scan.nextInt();
+	A=b*h;
+	System.out.println("Area of parallelogram:"+A);
+}
+}

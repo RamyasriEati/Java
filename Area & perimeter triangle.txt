@@ -1,0 +1,11 @@
+public class Triangle {
+public static void main(String[] args)
+{
+	int x=2,y=3,z=5;
+	double b=10,h=4;
+	double A=(b*h/2);
+	double p=x+y+z;
+	System.out.println("The area of triangle is:"+A);
+	System.out.println("The perimeter of triangle:"+p);
+}
+}
