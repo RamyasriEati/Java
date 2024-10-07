@@ -1,0 +1,54 @@
+/*if array is given [10, 5, 15, 6, 25] the steps are 1st identifies largest number and cancel it and if largest number 
+have right side values cancel it also. After that check again largest number and repeat the process util array becomes 0 
+values.  Find how many steps are involved to came empty*/
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input array size
+        int n = sc.nextInt();
+
+        // Initialize the array
+        int[] arr = new int[n];
+
+        // Input array elements
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Variable to store the number of steps
+        int steps = 0;
+
+        // Loop to zero out max elements
+        while (true) {
+            int max = arr[0];
+            int index = 0;
+
+            // Find the maximum element in the array
+            for (int i = 0; i < n; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                    index = i;
+                }
+            }
+
+            // If the maximum value is zero, we are done
+            if (max == 0) {
+                break;
+            }
+
+            // Zero out the found maximum element
+            for (int j = index; j < n; j++) {
+                arr[j] = 0;
+            }
+
+            // Increment steps
+            steps++;
+        }
+
+        // Print the number of steps
+        System.out.println(steps);
+    }
+}
