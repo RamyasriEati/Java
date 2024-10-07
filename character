@@ -1,0 +1,29 @@
+/*Given a string S and a character C, write a program to count the number of sub- strings of S that contains only the character C.
+Input: First line contains the string S Second line contains the character C.
+Output: Single Integer denoting the no. of sub-string containing only the given character C.
+Input:0110111
+1
+Output:9
+code:-/
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextLine();
+		char c = sc.next().charAt(0);
+		int count = 0;
+		int total =0;
+		for(int i =0 ; i < s.length(); i++){
+		    if(s.charAt(i) == c){
+		        count++;
+		    }
+		 else {
+		    total += (count *(count + 1))/2;
+		    count = 0;
+		}
+		total += (count *(count +1))/2;
+		System.out.println(total);
+		}
+	}
+}
