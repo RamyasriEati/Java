@@ -1,0 +1,50 @@
+ 1)Write Java programs to display the following patterns?
+    *
+   ***
+  *****
+ *******
+*********
+class Main
+ { 
+ public static void main(String[] args) 
+{ 
+ for(int i = 0; i < 10; i++) 
+ { 
+ for(int j = 0; j < (9-i); j++) 
+{ 
+System.out.print(" "); 
+} 
+for(int k = 0; k <(2*i+1); k++) 
+{ 
+ System.out.print("*"); 
+ } 
+ System.out.println(); 
+ } 
+} 
+}
+
+2)Write Java programs to display the following patterns?
+* * * * * * * * * *
+* * * * * * * * *
+* * * * * * * *
+* * * * * * *
+* * * * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+1)class Test 
+2) { 
+3) public static void main(String[] args) 
+4) { 
+5) for(int i = 0; i < 10; i++) 
+6) { 
+7) for(int j = 0; j < (10-i); j++) 
+8) { 
+9) System.out.print("*"+" "); 
+10) } 
+11) System.out.println(); 
+12) } 
+13) } 
+14)}
